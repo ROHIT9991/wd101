@@ -13,6 +13,14 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .entriesBox {
+            width: 600px; /* Set the width of the entries box here */
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .form-field {
             margin-bottom: 10px;
         }
@@ -71,10 +79,23 @@
             </div>
         </form>
     </div>
-    <div class="box" id="entries">
+    <div class="entriesBox" id="entries">
         <h2>Entries</h2>
-        <div id="entryList"></div>
+        <table id="entryTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>DOB</th>
+                    <th>Accepted Terms</th>
+                </tr>
+            </thead>
+            <tbody id="entryList"></tbody>
+        </table>
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
